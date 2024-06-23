@@ -1,0 +1,13 @@
+{
+  "version": "3",
+  "redirects": {
+    "https://esm.sh/franc-min@6": "https://esm.sh/franc-min@6.2.0"
+  },
+  "remote": {
+    "https://esm.sh/franc-min@6.2.0": "b8a00d4209355f3aeeeba1003344b171a1524015d092e6c7efb1ac76626d42f8",
+    "https://esm.sh/v135/collapse-white-space@2.1.0/denonext/collapse-white-space.mjs": "f9413c2273567b627ded33e389b26ec20249af2337e51933f7c459a3bb4c875c",
+    "https://esm.sh/v135/franc-min@6.2.0/denonext/franc-min.mjs": "34b9c4d24786eb75c7eefe85750e6783f1d881797bffddbde3ba4d79b97b86e4",
+    "https://esm.sh/v135/n-gram@2.0.2/denonext/n-gram.mjs": "e4c198a0a6d22b715b3910fa4925a6cd66c26b5901012eae901681b82977b1a8",
+    "https://esm.sh/v135/trigram-utils@2.0.1/denonext/trigram-utils.mjs": "26760634968ba4138382a2d53d6aa80bd1005104af94c8645b607aa4257b38d1"
+  }
+}

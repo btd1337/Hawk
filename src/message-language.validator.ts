@@ -1,12 +1,13 @@
 import { francAll } from 'franc-min';
+import { LanguageCode } from './language-code.enum.ts';
 
-export class CommitValidator {
+export class MessageLanguageValidator {
 	message: string;
 	language?: string;
 
 	constructor(message: string, language?: string) {
 		this.message = message;
-		this.language = language;
+		this.language = language || LanguageCode.English;
 	}
 
 	isFixup(): boolean {
@@ -17,7 +18,7 @@ export class CommitValidator {
 		return this.message.startsWith('Revert ');
 	}
 
-	isCommitMessageValid(): boolean {
+	isValidMessage(): boolean {
 		if (this.isFixup() || this.isRevert()) {
 			return true;
 		}
@@ -29,8 +30,7 @@ export class CommitValidator {
 			: 2;
 
 		for (let i = 0; i < maxAllowed; i++) {
-			// Português
-			if (probableLanguages[i][0] === 'por') {
+			if (probableLanguages[i][0] === this.language) {
 				return true;
 			}
 		}
