@@ -12,6 +12,8 @@
     "start": "deno run --allow-read src/main.ts"
   },
   "imports": {
+    "/": "./",
+    "./": "./",
     "franc-min": "https://esm.sh/franc-min@6"
   }
 }
