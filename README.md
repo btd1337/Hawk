@@ -3,7 +3,7 @@
 ## Message Language Validator
 
 This application validates if messages are in the desired language using
-command-line arguments.
+command-line arguments. Very useful for validating git commit message language.
 
 ### Setup
 
@@ -36,6 +36,19 @@ deno task start --message="Your commit message here" --language=eng
 
 ```sh
 deno task start --file=path/to/your/file.txt --language=eng
+```
+
+##### Validate in Your External Project:
+
+Util Example: Validate your commit messages using Husky:
+
+```sh
+# file: .husky/commit-msg
+
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+deno run --allow-read https://deno.land/x/hawk/src/main.ts -l=eng -f="$1"
 ```
 
 ### Error Handling
