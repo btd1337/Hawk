@@ -1,0 +1,17 @@
+{
+  "fmt": {
+    "indentWidth": 4,
+    "lineWidth": 80,
+    "proseWrap": "always",
+    "semiColons": true,
+    "singleQuote": true,
+    "useTabs": true
+  },
+  "tasks": {
+    "format": "deno fmt",
+    "start": "deno run src/main.ts"
+  },
+  "imports": {
+    "franc-min": "https://esm.sh/franc-min@6"
+  }
+}
