@@ -9,7 +9,7 @@
   },
   "tasks": {
     "format": "deno fmt",
-    "start": "deno run src/main.ts"
+    "start": "deno run src/index.ts"
   },
   "imports": {
     "franc-min": "https://esm.sh/franc-min@6"
