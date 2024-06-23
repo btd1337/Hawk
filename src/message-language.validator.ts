@@ -1,4 +1,4 @@
-import { francAll } from 'franc-min';
+import { francAll } from './deps.ts';
 import { LanguageCode } from './language-code.enum.ts';
 
 export class MessageLanguageValidator {
